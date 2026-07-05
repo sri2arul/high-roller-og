@@ -8,7 +8,7 @@ High Roller is a game about flipping dice.
 
 High Roller (I will get a better name as there are 40 other High Rollers) is the very first version of a game inspired by Drive Mad and Backflip Adventure. You launch a six-sided dice off of a platform and try to land it as PERFECT as possible.
 
-- This is the very first version i made where I just created the basics of five levels, character movement and physics, a menu and a shitty level select, and back/next/retry/home buttons. Modified to be One Key Feasible.
+- This is the very first version i made where I just created the basics of five levels, character movement and physics, and back/next/retry buttons. Modified to be One Key Feasible.
 
 The game will take place (only one map so far) in different maps where each five levels are on each map. Each map is connected, as in the version i made, it takes place in a city and the levels move higher and higher as you progress through the map.
 
@@ -30,7 +30,7 @@ The game will take place (only one map so far) in different maps where each five
 
 - Press space again to launch
 
-- Use A/D or </> while in the air to spin (so you can land FLAT)
+- Use space while in the air to spin forward (so you can land FLAT)
 
 - Land on the target platform to complete the level
 
