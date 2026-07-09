@@ -59,3 +59,6 @@ Sri Arul
 * AI:
     * Claude taught me the basics at the start and gave me links to tutorials
     * Codex was used at the start for helping me learn the Physics
+ 
+ For reviewers -
+      I am very deeply sorry that I wasn't able to put clean commits on this as it was just some old time in the corner :(
