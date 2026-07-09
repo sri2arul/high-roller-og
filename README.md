@@ -31,6 +31,8 @@ The game will take place (only one map so far) in different maps where each five
 - Press space again to launch
 
 - Use space while in the air to spin forward (so you can land FLAT)
+  
+    - ONE THING IS THAT IF YOU HAVE YOUR MOUSE TO THE LEFT SIDE OF THE SCREEN IT GO THAT WAY AND IF ITS ON THE RIGHT IT SPINS THE OTHER WAY
 
 - Land on the target platform to complete the level
 
