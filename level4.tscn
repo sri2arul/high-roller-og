@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://0lgs5dtylg7c"]
+
+[ext_resource type="Script" uid="uid://c8vdet38ovkm2" path="res://level_4.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bssxoot2r81qr" path="res://Untitled.glb" id="2"]
+[ext_resource type="Script" uid="uid://7ki8qx14fdiq" path="res://kill_box.gd" id="3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xy4tn"]
+size = Vector3(2.7937307, 0.96632385, 13.484268)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xy4tn"]
+size = Vector3(3, 1, 13.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwvnx"]
+albedo_color = Color(0.8595039, 0.9476953, 0.94972, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_usj0q"]
+size = Vector3(15.970589, 0.5115967, 3.9989796)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5j5gb"]
+size = Vector3(16, 0.5, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xy4tn"]
+albedo_color = Color(0.21176471, 0.18431373, 0.21176471, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wy08v"]
+size = Vector3(10.705444, 0.28271484, 2.8666992)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ln0b"]
+size = Vector3(56.689484, 1, 37.287125)
+
+[node name="Level4" type="Node3D" unique_id=1222441707 node_paths=PackedStringArray("ground", "lander", "target")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.767269, 0, 3.0929832)
+script = ExtResource("1")
+ground = NodePath("Airplane")
+lander = NodePath("Crane")
+target = NodePath("Target4")
+
+[node name="Untitled" parent="." unique_id=740969785 instance=ExtResource("2")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="Cube_008" parent="Untitled" index="8" unique_id=1261061078]
+transform = Transform3D(-6.055727, 0, 0, 0, -4.4703145, 0, 0, 0, -27.330914, -95.2495, 169.78842, 111.410675)
+
+[node name="Airplane" type="StaticBody3D" parent="." unique_id=797927660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.302113, 42.935658, 26.970095)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Airplane" unique_id=1580872700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4917641, 0.023780823, 0.71382904)
+shape = SubResource("BoxShape3D_xy4tn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Airplane" unique_id=1231491607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.481535, 0.16959, 0.74922943)
+mesh = SubResource("BoxMesh_xy4tn")
+surface_material_override/0 = SubResource("StandardMaterial3D_lwvnx")
+
+[node name="Crane" type="StaticBody3D" parent="." unique_id=986909853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.849402, 22.857218, 19.823696)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Crane" unique_id=1480333392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0818787, 0.2264843, 0.27308273)
+shape = SubResource("BoxShape3D_usj0q")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Crane" unique_id=1062614683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1115494, 0.23127604, 0.26979446)
+mesh = SubResource("BoxMesh_5j5gb")
+surface_material_override/0 = SubResource("StandardMaterial3D_xy4tn")
+
+[node name="Target4" type="Area3D" parent="." unique_id=664312534]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5773954, -9.654036, 19.823696)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Target4" unique_id=453093946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4456797, 33.089634, 0.20188904)
+shape = SubResource("BoxShape3D_wy08v")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=528707607]
+transform = Transform3D(0.012482613, 0.94407886, 0.32948494, -0.6230524, 0.26506758, -0.73589754, -0.7820806, -0.19610047, 0.5915191, 0.20383711, 3.644868, 0.6489142)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="DirectionalLight3D" unique_id=2068336300]
+transform = Transform3D(0.18231824, 0.49830586, -0.84761524, -0.19766739, -0.82588845, -0.5280499, -0.96316546, 0.26381913, -0.05207579, 0.20383711, 3.644868, 0.6489142)
+
+[node name="KillBox" type="Area3D" parent="." unique_id=1645860271]
+script = ExtResource("3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="KillBox" unique_id=1832271015]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8449907, 8.289139, 24.406033)
+shape = SubResource("BoxShape3D_7ln0b")
+
+[connection signal="body_entered" from="KillBox" to="KillBox" method="_on_body_entered"]
+
+[editable path="Untitled"]
