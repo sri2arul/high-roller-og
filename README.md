@@ -61,4 +61,5 @@ Sri Arul
     * Codex was used at the start for helping me learn the Physics
  
  For reviewers -
-      I am very deeply sorry that I wasn't able to put clean commits on this as it was just some old time in the corner :( dissapointed 
+      I am very deeply sorry that I wasn't able to put clean commits on this as it was just some old time in the corner that I made before I even knew github properly.
+      
