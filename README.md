@@ -6,7 +6,7 @@ High Roller is a game about flipping dice.
 
 ## Description
 
-High Roller (I will get a better name as there are 40 other High Rollers) is the very first version of a game inspired by Drive Mad and Backflip Adventure. You launch a six-sided dice off of a platform and try to land it as PERFECT as possible.
+High Roller (I will get a better name as there are 40 other High Rollers) is the very first version of a game (my very first Godot Game indeed*) inspired by Drive Mad and Backflip Adventure. You launch a six-sided dice off of a platform and try to land it as PERFECT as possible, like a bottle flip!
 
 - This is the very first version i made where I just created the basics of five levels, character movement and physics, and back/next/retry buttons. Modified to be One Key Feasible.
 
@@ -32,13 +32,13 @@ The game will take place (only one map so far) in different maps where each five
 
 - Use space while in the air to spin forward (so you can land FLAT)
   
-    - ONE THING IS THAT IF YOU HAVE YOUR MOUSE TO THE LEFT SIDE OF THE SCREEN IT GO THAT WAY AND IF ITS ON THE RIGHT IT SPINS THE OTHER WAY
+    - One thing is that if you have your cursor (the white thing) to the left side of the game screen and press space, it will turn to the left. This works vice versa.
 
 - Land on the target platform to complete the level
 
 - The retry, previous, and next buttons appear after landing
 
-- THERE ARE PROBABLY BUGS BECAUSE THIS WAS THAT FIRST VERSION - REPORT TO ME I'M TALKING TO YOU REVIEWER SO I CAN FIX THEM IS NEWER VERSIONS
+- There are probably bugs in this version - Please (if you want to) report to me those bugs so I can fix them in newer versions.
 
 ## Authors
 
@@ -62,4 +62,7 @@ Sri Arul
  
  For reviewers -
       I am very deeply sorry that I wasn't able to put clean commits on this as it was just some old time in the corner that I made before I even knew github properly.
-      
+
+*not the job software
+
+**and because i didn't commit properly, if you want to ask what i did in chrono order ill give an idea of what i did for each element
